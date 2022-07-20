@@ -5,7 +5,8 @@ class Solution(object):
         :type target: int
         :rtype: List[int]
         """
-        
+        # Concept
+        # Using dictionary, we solved this
         values = dict()
         
         for i, elem in enumerate(nums):
