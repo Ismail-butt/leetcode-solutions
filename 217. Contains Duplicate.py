@@ -1,16 +1,15 @@
 class Solution(object):
     def containsDuplicate(self, nums):
-        # Concept (Check if Element is present in list or not)
-        # we can use list/hashset/dict
-        # take a list, and check if current element is found in list or not
-        # if it not found in the list, add it else if it founds return True
+        # Concept (Check if Element is present in hashset or not)
+        # take a hashset, and check if current element is found in hashset or not
+        # if it not found in the hashset, add it else if it founds return True
         
-        li = []
+        hashset = set()
         
         for i in range(len(nums)):
-            if nums[i] in li:
+            if nums[i] in hashset:
                 return True
-            li.append(nums[i])
+            hashset.add(nums[i])
         return False
 
 nums = [1,2,3,1]
